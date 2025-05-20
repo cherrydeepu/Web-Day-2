@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Attractive Registration Form</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px 50px;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+            width: 360px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .form-title {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: #fff;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            font-style: italic;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #e0e0e0;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px 15px;
+            margin-bottom: 25px;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            box-sizing: border-box;
+            background: rgba(255, 255, 255, 0.15);
+            color: #fff;
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+        }
+        input[type="text"]::placeholder,
+        input[type="email"]::placeholder,
+        input[type="password"]::placeholder {
+            color: #ddd;
+        }
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            background: rgba(255, 255, 255, 0.3);
+            outline: none;
+            box-shadow: 0 0 8px 2px #9b59b6;
+            color: #fff;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 14px;
+            background-color: #9b59b6;
+            border: none;
+            border-radius: 12px;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 15px rgba(155, 89, 182, 0.6);
+        }
+        input[type="submit"]:hover {
+            background-color: #8e44ad;
+            box-shadow: 0 6px 20px rgba(142, 68, 173, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-title">Registration Form</div>
+        <form action="#" method="post" novalidate>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required />
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required />
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password" required />
+            <input type="submit" value="Register" />
+        </form>
+    </div>
+</body>
+</html>
